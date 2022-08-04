@@ -32,11 +32,11 @@ const [Appointments, setAppointments] =useState([]);
 
 export const Kalender = () => {
   return (
-<div className='main'>
+
+<div className>
 <Create/>
 <div>  
  <createform/>
-
 </div>
   <Scheduler data={schedulerData}>
     <ViewState />
