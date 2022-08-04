@@ -6,16 +6,17 @@ import './Navbar.css'
 
 export const Navbar = () => {
   return (
-    <AppBar position='static'>
-        <Toolbar className='Tool_bar'>
-            <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
+    <AppBar position='static' >
+        <Toolbar className='Tool_bar' >
+            <Link to='/' size='large' edge='start' aria-label='logo'>
               <HomeSharpIcon edge='start'/> 
-            </IconButton>
-              <Stack direction='row' spacing={2} >
+            </Link>
+              <Link to='/'></Link>
+              <Stack direction='row' spacing={7} >
                 <Link className='p_fontdiff' to="/">Home</Link>
-                <Link className='p_fontdiff' to="/kalender">Kalender</Link>
-                <Link className='p_fontdiff' to="/signin">Sign in</Link>
                 <Link className='p_fontdiff' to="/signup">Sign up</Link>
+                <Link className='p_fontdiff' to="/kalender">Kalender</Link>
+                <Link className='p_fontdiff' to="/changeDate">Change date</Link>
                 <Link to="*"></Link>
               </Stack> 
             
